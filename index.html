@@ -1,122 +1,124 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html class="page" lang="ru">
   <head>
     <meta charset="utf-8">
     <title>HTML Academy: Седона</title>
+    <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
+    <link href="css/style.css" rel="stylesheet">
   </head>
-  <body>
-<header>
-    <nav>
-        <a>
+  <body class="page-body">
+<header class="main-header">
+    <nav class="main-navigation">
+        <a class="main-logo">
             <img src="img/logo.svg" height="138" width="70" alt="Логин Седона">
         </a>
-        <ul>
-            <li><a href="blank.html">Информация</a></li>
-            <li><a href="blank.html">Фото и видео</a></li>
-            <li><a href="blank.html">Карта штата</a></li>
-            <li><a href="hotels.html">Гостиницы</a></li>
+        <ul class="site-navigation">
+            <li class="site-navigation info"><a href="blank.html">Информация</a></li>
+            <li class="site-navigation media"><a href="blank.html">Фото и видео</a></li>
+            <li class="site-navigation place-map"><a href="blank.html">Карта штата</a></li>
+            <li class="site-navigation hotels-link"><a href="hotels.html">Гостиницы</a></li>
         </ul>
     </nav>
 </header>
-<main>
+<main class="container">
     <h1>Добро пожаловать в Седону</h1>
-    <section>
-        <h2>Баннер</h2>
-        <a>
+    <section class="bunner">
+        <h2 class="">Баннер</h2>
+        <a class="bunner-picture">
             <img src="img/welcome.svg" width="480" height="358" alt="Логотип велком на фоне гор">
         </a>
     </section>
-    <section>
-     <P>Седона — небольшой городок в Аризоне, заслуживающий большего!</P>
-       <p>Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
+    <section class="slogan">
+     <p>Седона — небольшой городок в Аризоне, заслуживающий большего!</p>
+       <p class="description-slogan">Рассмотрим 5 причин, по которым Седона круче, чем гранд каньон!</p>
        <!-- Причины-->
-      <ul>
+      <ul class="reason-list">
         <!-- Причина №1-->
-        <li>
-            <h3>Настоящий городок</h3>
-            <p>— №1 —</p>
-            <p>Седона - не аттракцион для туристов, там течёт своя жизнь</p>
-            <img src="img/image_sedona_1st_Reason.jpg" width="800" height="256" alt="1 причина">
-            <ul>
+        <li class="reason-real-town">
+            <h3 class="reason-real-header">Настоящий городок</h3>
+            <p class="reason-real-number">— №1 —</p>
+            <p class="reason-real-text">Седона - не аттракцион для туристов, там течёт своя жизнь</p>
+            <div class="reason-real-image">
+                <img src="img/image_sedona_1st_Reason.jpg" width="800" height="256" alt="1 причина">
+            </div>
+            <ul class="feature-list">
                <!-- Преимущества правила N1-->
-                <li>
-                    <h3>Жилье</h3>
-                    <p>Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
+                <li class="feature-housing">
+                    <h3 class="feature-housing-header">Жилье</h3>
+                    <p class="feature-housing-text">Рекомендуем пожить в настоящем мотеле, всё как в кино!</p>
                 </li>
-                <li>
-                    <h3>Еда</h3>
-                    <p>Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
+                <li class="feature-food">
+                    <h3 class="feature-food-header">Еда</h3>
+                    <p class="feature-food-text">Всегда заказывайте фирменный бургер, вы не разочаруетесь!</p>
                 </li>
-                <li>
-                    <h3>Сувениры</h3>
-                    <p>Не только китайского, но и местного производства!</p>
+                <li class="feature-souvenirs">
+                    <h3 class="feature-souvenirs-header">Сувениры</h3>
+                    <p class="feature-souvenirs-text">Не только китайского, но и местного производства!</p>
                 </li>
             </ul>
          </li>
         <!-- Причина №2-->
-        <li>
-            <h3>Там есть Мост дьявола</h3>
-            <p>— №2 —</p>
-            <p>Да, по нему можно пройти! Если конечно вы осмелитесь</p>
-            <figure>
-                <a>
-                   <img src="img/image_sedona_2st_Reason.jpg" width="800" height="256" alt="2 причина">                    
-                </a>
-            </figure>
+        <li class="reason-bridge">
+            <h3 class="reason-bridge-header">Там есть Мост дьявола</h3>
+            <p class="reason-bridge-number">— №2 —</p>
+            <p class="reason-bridge-text">Да, по нему можно пройти! Если конечно вы осмелитесь</p>
+            <div class="reason-bridge-image">
+                <img src="img/image_sedona_2st_Reason.jpg" width="800" height="256" alt="2 причина">        
+            </div>
         </li>
         <!-- Причина №3-->
-        <li>
-            <h3>Небольшая площадь</h3>
-            <p>— №3 —</p>
-            <p>Все достопримечательности находятся очень близко</p>
+        <li class="reason-area">
+            <h3 class="reason-area-header">Небольшая площадь</h3>
+            <p class="reason-area-number">— №3 —</p>
+            <p class="reason-area-text">Все достопримечательности находятся очень близко</p>
         </li>
         <!-- Причина №4-->
-        <li>
-            <h3>Красивая дорога</h3>
-            <p>— №4 —</p>
-            <p>ехать в седону из лас-вегаса совсем не скучно!</p>
+        <li class="reason-road">
+            <h3 class="reason-road-header">Красивая дорога</h3>
+            <p class="reason-road-number">— №4 —</p>
+            <p class="reason-road-text">ехать в седону из лас-вегаса совсем не скучно!</p>
         </li>
         <!-- Причина №5-->
-        <li>
-            <h3>Мало туристов</h3>
-            <p>— №5 —</p>
-            <p>большинство едет в гранд каньон и толпится там</p>
+        <li class="reason-tourists">
+            <h3 class="reason-tourists-header">Мало туристов</h3>
+            <p class="reason-tourists-number">— №5 —</p>
+            <p class="reason-tourists-text">большинство едет в гранд каньон и толпится там</p>
         </li>           
       </ul>
     </section>
-    <section>
-        <h2>Заинтересовались?</h2>
-        <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в седоне</p>
-        <button type="button">Поиск страницы в Седоне</button>
+    <section class="search">
+        <h2 class="search-header">Заинтересовались?</h2>
+        <p class="search-instruction">Укажите предполагаемые даты поездки,<br> и мы покажем вам лучшие предложения гостиниц в седоне</p>
+        <button class="search-button" type="button">Поиск страницы в Седоне</button>
     </section>
-    <section>
+    <section class="modal-form">
         <!--Форма поиска -->
         <h2>Форма поиска</h2>
         <button type="button">Найти</button>
     </section>
     <!--Карта-->
-    <section>
+    <section class="map">
         <h2>Седона на карте</h2>
         <img src="img/map.jpg" width="1200" height="594" alt="Седона на карте">
     </section>
 </main>
-<footer>
-    <div>
-        <b>#VISITSEDONA</b>
-        <a href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
+<footer class="main-footer">
+    <div class="hashtag-item">
+        <b class="hashtag-link">#VISITSEDONA</b>
+        <a class="hashtag-tel" href="tel:+74956660166">ТЕЛ: +7(495) 666-01-66</a>
     </div>
     <div>
        <!--Социальные сети-->
-        <ul>
-           <li><a href="#">Твитер</a></li>
-           <li><a href="#">Фэйсбук</a></li>
-           <li><a href="#">Ютуб</a></li>
+        <ul class="social-list">
+           <li class="social-list-twitter"><a href="#">Твитер</a></li>
+           <li class="social-list-facebook"><a href="#">Фэйсбук</a></li>
+           <li class="social-list-youtube"><a href="#">Ютуб</a></li>
         </ul>
     </div>
     <!--htmlacademy logo-->
-    <div>
-        <span>Website by</span>
-        <a href="https://htmlacademy.ru/intensive/htmlcss">
+    <div class="academy-container">
+        <span class="academy-container-text">Website by</span>
+        <a class="academy-container-link" href="https://htmlacademy.ru/intensive/htmlcss">
         <img src="img/logo-htmlacademy.svg" width="" height="" alt="Логотип перехпд на лендинг htmlacademy">    
         </a>
     </div>

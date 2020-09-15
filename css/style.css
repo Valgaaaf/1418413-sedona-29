@@ -1,0 +1,177 @@
+/*Fonts*/
+/* pt-sans-regular - latin_cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 400;
+  src: url('../fonts/pt-sans-v11-latin_cyrillic-regular.eot'); /* IE9 Compat Modes */
+  src: local('PT Sans'), local('PTSans-Regular'),
+       url('../fonts/pt-sans-v11-latin_cyrillic-regular.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/pt-sans-v11-latin_cyrillic-regular.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/pt-sans-v11-latin_cyrillic-regular.svg#PTSans') format('svg'); /* Legacy iOS */
+}
+/* pt-sans-700 - latin_cyrillic */
+@font-face {
+  font-family: 'PT Sans';
+  font-style: normal;
+  font-weight: 700;
+  src: url('../fonts/pt-sans-v11-latin_cyrillic-700.eot'); /* IE9 Compat Modes */
+  src: local('PT Sans Bold'), local('PTSans-Bold'),
+       url('../fonts/pt-sans-v11-latin_cyrillic-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+       url('../fonts/pt-sans-v11-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
+       url('../fonts/pt-sans-v11-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+       url('../fonts/pt-sans-v11-latin_cyrillic-700.ttf') format('truetype'), /* Safari, Android, iOS */
+       url('../fonts/pt-sans-v11-latin_cyrillic-700.svg#PTSans') format('svg'); /* Legacy iOS */
+}
+
+
+body {
+    min-width: 1280;
+    margin: 0;
+    padding: 0;
+    font-family:"PT Sans", "Arial", sans-serif;
+    line-height: 21px;
+    color: #000000;
+    background-color: #FFFFFF;
+    text-transform: uppercase;
+        
+}
+.slogan{
+    font-weight: bold;
+    
+}
+.description-slogan {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+.reason-real-town{
+    background-color: #81B3D2;
+}
+.reason-real-number {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+.reason-real-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+.feature-list{
+    background-color: #FFFFFF;
+}
+.feature-housing-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+.feature-food-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+.feature-souvenirs-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+
+.reason-bridge-number{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+.reason-bridge-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+.reason-area{
+    background-color: #EEEEEE;
+}
+.reason-area-number{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+.reason-area-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+.reason-road{
+    background-color: #EEEEEE;
+}
+.reason-road-number{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+.reason-road-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+.reason-tourists{
+    background-color: #EEEEEE;
+}
+.reason-tourists-number{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+.reason-tourists-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+    color: #333333;
+}
+.search-header{
+    font-weight: bold;
+    font-size: 30px;
+    line-height: 24px;
+    color: #000000;
+}
+.search-instruction{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #333333; 
+}
+.search-buttom{
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #766357; 
+}
+.modal-form{
+    font-weight: bold;
+}
+.modal-buttom{
+    font-weight: bold;
+    color: #FFFFFF;
+    background-color: #81B3D2;
+}
+.hashtag-item{
+    font-weight: bold;
+}
+.academy-container-text{
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 26px;
+}
