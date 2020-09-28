@@ -39,7 +39,7 @@
     min-height: 100%;
     display: grid;
     grid-template-rows: min-content 1fr min-content;
-    align-content: flex-start;
+    
 }
 
 body {
@@ -95,20 +95,29 @@ body {
     
 }
 .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
     width: 1200px;
     margin: 0 auto;
     padding: 0 10;
+    border: 5px solid;
 }
 .slogan {
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 26px;
-    
-}
-.slogan-header {
     display: flex;
     flex-direction: column;
     justify-items: center;
+    align-content: center;
+    font-weight: bold;
+    font-size: 21px;
+    line-height: 26px;
+    text-align: center;
+    
+    
+}
+.slogan-header {
+
+    height: 272px;
     background-color: burlywood;
     
 }
@@ -122,6 +131,8 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    align-content: center;
+    
 }
 .block {
     display: flex;
@@ -130,6 +141,13 @@ body {
     height: 400px;
     height: 256px;
     background-color: #81B3D2;
+}
+.reason-list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
 }
 .reason-list .real-town {
     display: grid;
@@ -144,6 +162,8 @@ body {
 .reason-other {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    height: 256px;
+    align-content: center;
     background-color: #EEEEEE; 
     list-style: none;
 }
@@ -176,16 +196,21 @@ body {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     width: 387px;
+    height: 260px;
     column-gap: 20px;
+    align-content: center;
     list-style: none;
     margin: 0 auto;
     padding: 0;
+    
     }
 .feature-list-title {
+    
     font-weight: bold;
     font-size: 21px;
 }
 .feature-list-text {
+    
     font-size: 14px;
     line-height: 21px;
 }
@@ -194,6 +219,7 @@ body {
     grid-auto-rows: 1fr min-content;
     grid-auto-columns: 1fr min-content;
     width: 568px;
+    height: 291px;
     margin: 0 auto;
     padding: 0;
     
@@ -213,6 +239,7 @@ body {
     flex-direction: row;
     justify-content: center;
     align-content: center;
+    text-align: center;
     font-size: 14px;
     line-height: 24px;
     color: #333333; 
@@ -242,6 +269,14 @@ body {
     color: white;
     background-color: #81B3D2;
 }
+.map {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    width: 1200px;
+    
+    
+}
 .hashtag-item {
     font-weight: bold;
 }
@@ -251,18 +286,19 @@ body {
 }
 .main-footer {
     display: flex;
-    width: 1200px;
-    height: 120px;
     flex-direction: row;
-    justify-content: space-around;
-    margin: 0 auto;
-    padding: 0 10;
+    justify-content: center;
+    
+
 }
 .hashtag-item {
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 400px;
+    height: 120px;
+    margin: 0;
+    padding: 0;
     background-color: aquamarine;
 }
 .social-list {
@@ -270,7 +306,11 @@ body {
     flex-direction: row;
     justify-content: center;
     align-items: center;
+    align-content: center;
     width: 400px;
+    height: 120px;
+    margin: 0;
+    padding: 0;
     background-color: bisque;
 }
 .academy-container {
@@ -279,5 +319,6 @@ body {
     justify-content: center;
     align-items: center;
     width: 400px;
+    height: 120px;
     background-color: chartreuse;
 }
