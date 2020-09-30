@@ -103,7 +103,7 @@ body {
     padding: 0 10;
     border: 5px solid;
 }
-.slogan {
+.slogan, .slogan-header, .slogan-description {
     display: flex;
     flex-direction: column;
     justify-items: center;
@@ -112,15 +112,11 @@ body {
     font-size: 21px;
     line-height: 26px;
     text-align: center;
-    
-    
+    margin: 0 auto;
+    text-align: center;
+   
 }
-.slogan-header {
 
-    height: 272px;
-    background-color: burlywood;
-    
-}
 .banner {
     width: 1200px;
     height: 509px;
@@ -132,6 +128,8 @@ body {
     flex-direction: row;
     justify-content: center;
     align-content: center;
+    height: 100%;
+    align-items: center;
     
 }
 .block {
@@ -195,6 +193,7 @@ body {
 .feature-list {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 100%;
     width: 387px;
     height: 260px;
     column-gap: 20px;
@@ -202,17 +201,25 @@ body {
     list-style: none;
     margin: 0 auto;
     padding: 0;
+    text-align: center;
+}
     
-    }
+
 .feature-list-title {
-    
+    align-content: center;
     font-weight: bold;
     font-size: 21px;
+    background-color: aqua;
+    margin: 0;
+    padding: 0;
 }
 .feature-list-text {
-    
+    align-content: center;
     font-size: 14px;
     line-height: 21px;
+    background-color: blueviolet;
+    margin: 0;
+    padding: 0;
 }
 .search {
     display: grid;
@@ -288,6 +295,7 @@ body {
     display: flex;
     flex-direction: row;
     justify-content: center;
+    background-color: rgba(255, 255, 255, 0.9);
     
 
 }
@@ -295,11 +303,12 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    text-align: center;
     width: 400px;
     height: 120px;
     margin: 0;
     padding: 0;
-    background-color: aquamarine;
+    
 }
 .social-list {
     display: flex;
@@ -311,7 +320,7 @@ body {
     height: 120px;
     margin: 0;
     padding: 0;
-    background-color: bisque;
+    
 }
 .academy-container {
     display: flex;
@@ -320,5 +329,5 @@ body {
     align-items: center;
     width: 400px;
     height: 120px;
-    background-color: chartreuse;
+   
 }
