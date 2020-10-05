@@ -29,8 +29,6 @@
     
     /*карточки причин*/
     --gray-blue-color: #81B3D2; /*цвет фона*/
-    
-    
 }
 .page {
     height: 100%;
@@ -50,34 +48,25 @@ body {
     font-size: 14px;
     line-height: 21px;
     font-weight: normal;
-    color: #000000;
+    color: var(--basic-black);
     background-color: white;
     text-transform: uppercase;
-    
-        
 }
 .visually-hidden {
     display: none;
 }
 a {
     text-decoration: none;
+    color: var(--basic-black);
 }
 .main-header {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
     width: 1200px;
     position: relative;
     margin: 0 auto;
     background-color: white;
 }
 .main-navigation {
-    position: relative;
-    display: flex;
-    flex-direction: row;
     align-items: center;
-    width: 1200px;
     margin: 0 auto;
     font-size: 14px;
     line-height: 26px;
@@ -90,10 +79,9 @@ a {
     position: absolute;
     top: 0;
     left: 50%;
-    z-index: 1;
-    order: 0;
-    width: 70px;
-    height: 138px;
+    transform: translateX(-50%);
+    width: 138px;
+    height: 70px;
     
     
 }
@@ -102,12 +90,10 @@ a {
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    width: 1200px;
-    padding-top: 15px;
-    padding-bottom: 16ps;
     list-style: none;
     margin-top: 0;
     margin-bottom: 0;
+    padding: 0;
     
 }
 .site-navigation .info {
@@ -159,11 +145,11 @@ a {
 .slogan-header {
     width: 1200px;
     height: 272px;
-    background-image: url(../img/slogan_bg.png);
-    background-position: center;
+    background-image: url(../img/slogan_1.svg);
+    background-position: top center;
     background-repeat: no-repeat;
-    margin-top: 0px;
-    background-color: darkblue;
+    margin-top: -56px;
+    padding-top: 56px;
 }
 .banner {
     width: 1200px;
@@ -171,7 +157,6 @@ a {
     background-image: url(../img/background_photo.jpg);
     background-position: center;
     background-repeat: no-repeat;
-    
     
 }
 
@@ -250,46 +235,25 @@ a {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-template-rows: 100%;
-    width: 360px;
+    width: 400px;
     height: 260px;
-    column-gap: 20px;
-    align-content: center;
     list-style: none;
     margin: 0;
     padding: 0;
     text-align: center;
+    background-color: aqua;
     
 }
     
-.feature-list .housing {
+.feature-item  {
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
     padding-left: 70px;
     padding-right: 70p;
-    background-image: url(../img/icon-1.svg);
-    background-repeat: no-repeat;
-    background-position: 162px 60px;
-}
-.feature-list .food {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-left: 50px;
-    padding-right: 50px;
-    background-image: url(../img/icon-2.svg);
-    background-repeat: no-repeat;
-    background-position: 162px 61px;
-}
-.feature-list .souvenirs {
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    padding-left: 50px;
-    padding-right: 50px;
-    background-image: url(../img/icon-3.svg);
-    background-repeat: no-repeat;
-    background-position: center 55px;
+  
 }
 
 .feature-list-title {
@@ -406,6 +370,16 @@ a {
     height: 120px;
     margin: 0;
     padding: 0;
+    
+}
+.social-list-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 46px;
+    height: 48px;
+    
+    background: var(--gray-blue-color);
     
 }
 .academy-container {
