@@ -291,7 +291,10 @@ a {
 
 
 /*ФОРМА*/
-
+.modal-map-block {
+    display: block;
+    position: relative;
+}
 .search {
     display: grid;
     grid-auto-rows: 1fr min-content;
@@ -366,11 +369,11 @@ a {
 .search-button:active {
     background-color: var(--brown-red-active);
 }
+
 .form-group {
     display: flex;
     margin: 0 auto;
     padding: 0;
-    
 }
 .date-in {
     display: flex;
@@ -381,7 +384,6 @@ a {
     margin-bottom: 29px;
     margin-left: 55px;
     width: 500px;
-        
 }
 .date-out {
     display: flex;
@@ -548,6 +550,7 @@ a {
    
 }
 .map iframe {
+    z-index: 2;
     position: absolute;
     top 0;
     bottom: 0;
