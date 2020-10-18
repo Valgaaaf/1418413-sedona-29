@@ -31,15 +31,15 @@
                    <legend>Инфроструктура:</legend>
                    <ul class="infrastructure-list">
                        <li class="serch-list-item">
-                           <input class="checkbox" type="button" name="checkbox-pool">
+                           <input class="checkbox" id="checkbox-pool" type="button" name="checkbox-pool">
                                <label for="checkbox-hotel">Бассейн</label>
                        </li>
                        <li class="serch-list-item">
-                           <input class="checkbox" type="button" name="checkbox-parking">
+                           <input class="checkbox" id="checkbox-parking" type="button" name="checkbox-parking">
                                <label for="checkbox-hotel">Парковка</label>
                        </li>
                        <li class="serch-list-item">
-                           <input class="checkbox" type="button" name="checkbox-wi-fi">
+                           <input class="checkbox" id="checkbox-wi-fi" type="button" name="checkbox-wi-fi">
                                <label for="checkbox-hotel">Интернет</label>
                         </li>
                    </ul>
@@ -47,7 +47,7 @@
         <!--Тип жилья-->
                <fieldset class="filter-block habitat">
                    <legend>Тип жилья:</legend>
-                   <ul class="infrastructure-list">
+                   <ul class="habitat-list">
                        <li class="serch-list-item">
                            <input class="checkbox" type="button" name="checkbox-hotel">
                                <label for="checkbox-hotel">Гостиница</label>
@@ -65,21 +65,20 @@
                <fieldset class="filter-block price">
                    <legend>Стоимость в сутки (Р):</legend>
                    <div class="price-controls">
-                       <label class="from">от<input type="text" name= "min-price" value="0"></label>
-                       <label class="from">до<input type="text" name= "max-price" value="3000"></label>
+                       <label class="from">от<input type="number" name="min-price" value="0"></label>
+                       <label class="to">до<input type="number" name="max-price" value="3000"></label>
                    </div>
                    <div class="range-controls">
                       <div class="scale">
-                          <div class="bar"></div>
+                          <div class="bar"></div> 
                       </div>
-                      <div class="range-toggle-from"></div>
-                      <div class="range-toggle-to"></div>                       
+                      <div class="range-toggle range-toggle-from"></div>
+                      <div class="range-toggle range-toggle-to"></div>                       
                    </div>
                    <button class="button-show" type="submit">Показать</button>
                </fieldset>
            </form>
-           
-       </section>
+        </section>
        <!--Список гостиниц-->
        <section class="hotels">
          <h2 class="visually-hidden">Подходящие гостинницы</h2>
@@ -99,60 +98,70 @@
              </ul> 
              <!--Стрелочки сортировки-->
              <ul class="hotels-sort-battoms">
-                 <li></li>
-                 <li></li>
+                 <li>
+                     <a class="sort-battoms lowest" href="#">
+                         <span class="visually-hidden">По возрастанию</span>
+                         <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M5.5 0L0 10H11L5.5 0Z" fill="#CACACA"/>
+                         </svg>
+                     </a>
+                 </li>
+                 <li>
+                     <a class="sort-battoms highest active-sort-button" href="#">
+                         <span class="visually-hidden"></span>
+                         <svg width="11" height="10" viewBox="0 0 11 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                         <path d="M5.5 10L0 0H11" fill="#81B3D2"/>
+                            </svg>
+
+                     </a>
+                 </li>
              </ul>
           </div>
           <!--Список гостиниц--> 
-          <div class="hotels-list">
-              <ul class="hotels-list item">
-                  <li class="hotels-list item-amara">
-                      <img class="hotel-image" src="img/hotels/Amara.png" width="135" height="90" alt="Фото гостиницы amara">   <h3>Amara ResortSpa</h3>
-                      <p>Гостиница</p>
-                      <p>От 4000 Р.</p>
+          <ul class="hotels-list">
+              <li class="hotels-list-item">
+                  <div class="hotel-image">
+                      <img class="hotel-image" src="img/hotels/Amara.png" width="135" height="90" alt="Фото гостиницы amara"> 
+                  </div> 
+                  <div class="hotel-wrapper">
+                      <h3><a class="hotel-mame" href="#">Amara ResortSpa</a></h3>
+                      <div class="hotel-text">
+                          <p class="hotel-tipe">Гостиница</p>
+                          <p class="hotel-price">От 4000 Р.</p>
+                      </div>
                       <!--Кнопки бронирования-->
                       <div class="hotel-list-buttons">
-                          <button></button>
-                          <button></button>     
+                          <a class="hotel-button about" href="#">Подробнее</a>
+                          <a class="hotel-button booking" href="#">Забронировать</a>     
                       </div>
                       <div class="hotel-rating">
-                          <p>Рейтинг</p> 
-                          <p>8,5</p>
-                      </div> 
-                  </li>
-                  <li class="hotels-list item-desert ">
-                     <img class="hotel-image" src="img/hotels/Desert.png" width="135" height="90" alt="Фото гостиницы desert">
-                     <h3>Desert Quail Inn</h3>
-                     <p>Гостиница</p>
-                     <p>От 3000 Р.</p>
-                     <!--Кнопки бронирования-->
-                     <div class="hotel-list-buttons">
-                         <button></button>
-                         <button></button>      
-                     </div>
-                     <div class="hotel-rating">
-                          <p>Рейтинг</p>
-                          <p>8,9</p>
-                     </div>  
-                      
-                  </li>
-                  <li class="hotels-list item-diablo">
-                     <img class="hotel-image" src="img/hotels/Villas.png" width="135" height="90" alt="Фото гостиницы diablo">
-                     <h3>Villas at Poco Diablo</h3>
-                     <p>Гостиница</p>
-                     <p>От 2000 Р.</p>
-                     <!--Кнопки бронирования-->
-                     <div class="hotel-list-buttons">
-                         <button></button>
-                         <button></button>
-                     </div>
-                     <div class="hotel-rating">
-                          <p>Рейтинг</p>
-                          <p>9,2</p>
-                     </div> 
-                   </li>
-              </ul>
-          </div>
+                        <div class="hotel-srars">
+                            <div class="star">
+                                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                                </svg>
+                            </div>
+                            <div class="star">
+                                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                                </svg>
+                            </div>
+                            <div class="star">
+                                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                                </svg>
+                            </div>
+                            <div class="star">
+                                <svg width="19" height="17" viewBox="0 0 19 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M9.002 0L11.128 6.494H18.005L12.441 10.506L14.566 17L9.002 12.987L3.438 17L5.564 10.506L0 6.494H6.878L9.002 0Z" fill="#81B3D2"/>
+                                </svg>
+                            </div>
+                            <p class="hotel-rating-numbers">Рейтинг: 8,5</p>
+                        </div>
+                      </div>
+                  </div> 
+                </li>
+          </ul> <!---->
        </section>        
 </main>
  <footer class="main-footer">
