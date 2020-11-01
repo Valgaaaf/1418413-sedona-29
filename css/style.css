@@ -45,7 +45,8 @@
     
     /*Дата заезда и выезда*/
     --grey-bg-input: #f2f2f2; /*фон формы поиска*/
-    
+    /*html academy*/
+    --gray-htmlacademy: #BDBBBC;/**/
 }
 
 
@@ -152,10 +153,14 @@ a {
     padding-bottom: 16px;
     text-align: right;
 }
+.site-navigation .page-link:hover,
+.site-navigation .page-link:focus {
+    color: var(--gray-blue-color);
+}
+.site-navigation .page-link:active {
+    color: var(--brown-red);
+}
 .container {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     width: 1200px;
     margin: 0 auto;
     padding: 0 10;
@@ -382,6 +387,7 @@ a {
 }
 .search-button:active {
     background-color: var(--brown-red-active);
+    color: rgba(255, 255, 255, 0.3);
 }
 
 .form-group {
@@ -427,12 +433,12 @@ a {
     border: none;
 }
 .quantity {
-    width: 458px;
+    width: 568px;
     margin: 0;
     padding: 0;
     margin-top: 30px;
     margin-bottom: 54px;
-    justify-content: space-around;
+    justify-content: flex-start;
     
   }
 
@@ -474,6 +480,7 @@ a {
     padding-bottom: 6px;
     text-align: center;
     border: var(--grey-bg-input);
+    background-color: var(--grey-bg-input);
    
 }
 
@@ -553,6 +560,7 @@ a {
     border: none;
     background-color: var(--gray-blue-color);
     cursor: pointer;
+    
 }
 .modal-button:hover,
 .modal-button:focus {
@@ -560,6 +568,7 @@ a {
 }
 .modal-button:active {
     background-color: var(--gray-blue-active);
+    color: rgba(255, 255, 255, 0.3);
 }
 /*КАРТА*/
 .map {
@@ -578,9 +587,21 @@ a {
 .hashtag-item {
     font-weight: bold;
 }
+
 .academy-container-text {
     font-size: 14px;
     line-height: 26px;
+}
+.academy-container-link {
+    width: 115px;
+    height: 40px;
+}
+.academy-container-link:hover path,
+.academy-container-link:focus path {
+    fill: var(--gray-blue-color);
+}
+.academy-container-link:active path {
+    fill: var(--gray-htmlacademy);
 }
 .main-footer {
     position: relative;
@@ -651,9 +672,9 @@ a {
 
 .hotels-serch {
     position: relative;
-    margin-top: 10px;
+    margin-top: 0px;
     padding-top: 27px;
-    padding-bottom: 6px;
+    padding-bottom: 27px;
     background-image: url(../img/background_hotels.jpg);
     background-repeat: no-repeat;
 }
@@ -665,7 +686,7 @@ a {
     color: #eeeeee;
     padding-left: 72px;
     padding-right: 72px;
-    padding-bottom: 32px;
+    padding-bottom: 0px;
 }
 
 .filter-form legend {
@@ -687,11 +708,15 @@ a {
 }
 
 .infrastructure legend {
+    position: relative;
+    left: -30px;
     padding: 0;
     margin-bottom: 25px;
 }
 
 .infrastructure-list {
+    display: flex;
+    flex-direction: column;
     margin: 0;
     padding: 0;
     margin-top: 0;
@@ -699,8 +724,13 @@ a {
     list-style: none;
  
 }
+.serch-list-item{
+    margin-bottom: 25px;
+}
 
 .habitat legend {
+    position: relative;
+    left: -30px;
     padding: 0;
     margin-bottom: 25px;
 }
@@ -906,10 +936,16 @@ a {
 }
 .sort-wrapper {
     display: flex;
+    flex-direction: row;
     justify-content:flex-start;
     padding-bottom: 30px;
     padding-top: 30px;
     list-style: none;
+    align-items: center;
+    justify-content: space-between;
+}
+.sort-wrapper-container{
+    display: flex;
     
 }
 .founded {
@@ -925,6 +961,7 @@ a {
 .sort-list {
     display: flex;
     list-style: none;
+    align-items: center;
     width: 239px;
     padding-bottom: 30px;
     padding-top: 30px;
@@ -940,20 +977,23 @@ a {
     display: flex;
     width: 34px;
     justify-content: center;
-    margin-left: 503px;
     list-style: none;
     padding-bottom: 30px;
     padding-top: 30px;
+    margin-right: 72px;
 }
 /*Список отелей*/
+
 .hotels-list {
     margin: 0;
     padding: 0;
     list-style: none;
     flex-grow: 1;
+    
 }
 .hotels-list-item {
     display: flex;
+    justify-content: center;
     padding-left: 6%;
     padding-right: 6%;
     border-bottom: 1px solid #E5E5E5;
@@ -970,11 +1010,15 @@ a {
     display: flex;
     flex-direction: column;
     flex-grow: 1;
-    
+    justify-content: center;
+}
+.hotel-wrapper-list{
+    display: flex;
+    flex-direction: column;
 }
 .hotel-wrapper h3 {
     margin: 0;
-    padding-top: 24px;
+    padding-top: 0px;
     padding-bottom: 7px;
 }
 .hotel-name {
@@ -1005,6 +1049,8 @@ a {
     color: var(--basic-gray-dark);
 }
 .hotel-list-buttons {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
     
 }
@@ -1021,27 +1067,48 @@ a {
     background-color: var(--gray-blue-color);
     color: var(--basic-white);
 }
+.about:hover,
+.about:focus {
+    background-color: var(--gray-blue-hover);
+}
+.about:active {
+    background-color: var(--gray-blue-active);
+    color: rgba(255, 255, 255, 0.3);
+}
 .booking {
     width: 142px;
     background-color: var(--brown-red);
     color: var(--basic-white);
 }
+.booking:hover,
+.booking:focus {
+    background-color: var(--brown-red-hover);
+}
+.booking:active {
+    background-color: var(--brown-red-active);
+    color: rgba(255, 255, 255, 0.3);
+}
+
 .hotel-rating {
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
     align-items: stretch;
     padding-top: 29px;
     padding-bottom: 30px;
+    justify-content: space-around;
 }
-.hotel-srars {
+
+.hotel-stars {
     display: flex;
     justify-content:flex-end;
 }
 .srar {
-    display: flex;
     padding-right: 6px;
 }
 .hotel-rating-numbers {
+    display: flex;
+    justify-content: center;
+    width: 110px;
     margin: 0;
     padding-top: 3px;
     padding-bottom: 3px;
