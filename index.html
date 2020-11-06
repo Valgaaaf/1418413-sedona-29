@@ -5,7 +5,7 @@
     <title>HTML Academy: Седона</title>
     <link href="https://fonts.googleapis.com/css2?family=PT+Sans:wght@400;700&display=swap" rel="stylesheet">
     <link href="css/">
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.mini.css" rel="stylesheet">
   </head>
   <body class="page-body">
 <header class="main-header">
@@ -134,7 +134,7 @@
             <!--Дата выезда-->
             <div class="form-group date-in">
                 <label for="in">Дата заезда 
-                   <input class="date-input" type="text" value="24 апреля 2017">
+                   <input class="date-input" type="text" name="in" value="24 апреля 2017">
                 </label> 
                 <button class="button-calendar" title="Вызов календаря" >
                 <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -146,7 +146,7 @@
             <!--Дата выезда-->
             <div class="form-group date-out">
                 <label for="in">Дата выезда 
-                   <input class="date-input" type="text" value="4 июля 2017">
+                   <input class="date-input" type="text" name="out" value="4 июля 2017">
                 </label> 
                 <button class="button-calendar" title="Вызов календаря">
                 <svg width="21" height="23" viewBox="0 0 21 23" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -163,7 +163,7 @@
                         <button class="minus" type="button">
                             <span class="visually-hidden">Кнопка уменьшения колличества взрослых</span>
                         </button>
-                        <input class="quantity-input" type="text" value="2">
+                        <input class="quantity-input" type="text" name="adults" value="2">
                         <button class="plus" type="button">
                             <span class="visually-hidden">Кнопка увеличентя колличества взрослых</span>
                         </button>    
@@ -176,7 +176,7 @@
                       <button class="minus" type="button">
                           <span class="visually-hidden">Кнопка уменьшения колличества детей</span>
                       </button>
-                      <input class="quantity-input" type="text" value="0">
+                      <input class="quantity-input" type="text" name="kids" value="0">
                       <button class="plus" type="button">
                           <span class="visually-hidden">Кнопка увеличения колличества детей</span>
                       </button>         
