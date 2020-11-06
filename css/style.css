@@ -1016,10 +1016,12 @@ a {
 /*Список отелей*/
 
 .hotels-list {
+    display: block;
     margin: 0;
     padding: 0;
     list-style: none;
     flex-grow: 1;
+    margin-bottom: 120px;
     
 }
 .hotels-list-item {
