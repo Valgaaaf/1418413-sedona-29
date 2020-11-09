@@ -191,7 +191,7 @@ a {
 .banner {
     width: 1200px;
     height: 509px;
-    background-image: url(../img/background_photo.jpg);
+    background-image: url(../img/background-photo.jpg);
     background-position: center;
     background-repeat: no-repeat;
 }
@@ -864,7 +864,7 @@ a {
     margin-top: 0px;
     padding-top: 27px;
     padding-bottom: 27px;
-    background-image: url(../img/background_hotels.jpg);
+    background-image: url(../img/background-hotels.jpg);
     background-repeat: no-repeat;
 }
 .filter-form {
