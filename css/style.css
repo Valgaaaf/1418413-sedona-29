@@ -743,6 +743,7 @@ a {
     line-height: 26px;
 }
 .academy-container-link {
+    margin-left: 8px;
     width: 115px;
     height: 40px;
 }
