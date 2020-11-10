@@ -7,17 +7,17 @@
     <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
-  <body class="page-body">
+  <body>
 <header class="main-header">
     <nav class="main-navigation">
         <a class="main-logo" href="#">
             <img src="img/logo.svg" height="70" width="138" alt="Логин Седона">
         </a>
         <ul class="site-navigation">
-            <li class="site-navigation info"><a class="page-link" href="blank.html">Информация</a></li>
-            <li class="site-navigation media"><a class="page-link" href="blank.html">Фото и видео</a></li>
-            <li class="site-navigation place-map"><a class="page-link" href="blank.html">Карта штата</a></li>
-            <li class="site-navigation hotels-link"><a class="page-link" href="hotels.html">Гостиницы</a></li>
+            <li class="site-item info"><a class="page-link" href="blank.html">Информация</a></li>
+            <li class="site-item media"><a class="page-link" href="blank.html">Фото и видео</a></li>
+            <li class="site-item place-map"><a class="page-link" href="blank.html">Карта штата</a></li>
+                <li class="site-item hotels-link"><a class="page-link" href="hotels.html">Гостиницы</a></li>
         </ul>
     </nav>
 </header> 
@@ -26,10 +26,10 @@
        <!--Форма фильтр выбора гостиницы-->
        <section class="hotels-serch">
            <h2 class="visually-hidden">Интерфейс по выбору гостиницы</h2>
-           <form class="filter-form" action="hotels.html" method="post">
+           <form class="filter-form" action="https://echo.htmlacademy.ru" method="post">
         <!--Инфроструктура-->
                <fieldset class="filter-block infrastructure">
-                   <legend class="subtitle">Инфроструктура:</legend>
+                   <legend class="subtitle">Инфраструктура:</legend>
                    <ul class="infrastructure-list">
                        <li class="serch-list-item">
                                <label class="check"><input class="checkbox" id="checkbox-pool" type="checkbox" name="checkbox-pool"> <span class="check__box"></span>Бассейн
@@ -61,8 +61,8 @@
                <fieldset class="filter-block price">
                    <legend>Стоимость в сутки (Р):</legend>
                    <div class="price-controls">
-                       <label class="from">от<input type="number" name="min-price" value="0"></label>
-                       <label class="to">до<input type="number" name="max-price" value="3000"></label>
+                       <label class="from">от<input type="text" name="min-price" value="0"></label>
+                       <label class="to">до<input type="text" name="max-price" value="3000"></label>
                    </div>
                    <div class="range-controls">
                       <div class="scale">
@@ -80,8 +80,8 @@
          <h2 class="visually-hidden">Подходящие гостинницы</h2>
           <div class="sort-wrapper">
             <div class="sort-wrapper-container">
-             <p class="sort-wrapper founded">Найдено:<span>3</span></p>
-             <p class="sort-wrapper sorting">Сортировка</p>
+             <p class="sort-text founded">Найдено: 3</p>
+             <p class="sort-text sorting">Сортировка</p>
              <ul class="sort-list">
                  <li class="sort-item">
                      <a href="#">По цене</a>
@@ -90,7 +90,7 @@
                      <a href="#">По типу</a>
                  </li>
                  <li class="sort-item">
-                     <a href="#">По рейтенгу</a>
+                     <a href="#">По рейтингу</a>
                  </li>
              </ul> 
             </div>
@@ -118,11 +118,11 @@
           <ul class="hotels-list">
             <li class="hotels-list-item">
                   <div class="hotel-image">
-                      <img class="hotel-image" src="img/hotels/amara.png" width="135" height="90" alt="Фото гостиницы amara"> 
+                      <img src="img/hotels/amara.png" width="135" height="90" alt="Фото гостиницы amara"> 
                   </div> 
                   <div class="hotel-wrapper">
                      <div class="hotel-wrapper-list">
-                          <h3><a class="hotel-mame" href="#">Amara ResortSpa</a></h3>
+                          <h3><a class="hotel-mame" href="#">Amara Resort & Spa</a></h3>
                           <div class="hotel-text">
                           <p class="hotel-tipe">Гостиница</p>
                           <p class="hotel-price">От 4000 Р.</p>
@@ -162,7 +162,7 @@
                 </li>
             <li class="hotels-list-item">
                   <div class="hotel-image">
-                      <img class="hotel-image" src="img/hotels/desert.png" width="135" height="90" alt="Фото гостиницы desert"> 
+                      <img src="img/hotels/desert.png" width="135" height="90" alt="Фото гостиницы desert"> 
                   </div> 
                   <div class="hotel-wrapper">
                      <div class="hotel-wrapper-list">
@@ -206,7 +206,7 @@
                 </li>
             <li class="hotels-list-item">
                   <div class="hotel-image">
-                      <img class="hotel-image" src="img/hotels/villas.png" width="135" height="90" alt="Фото гостиницы villas"> 
+                      <img src="img/hotels/villas.png" width="135" height="90" alt="Фото гостиницы villas"> 
                   </div> 
                   <div class="hotel-wrapper">
                      <div class="hotel-wrapper-list">
