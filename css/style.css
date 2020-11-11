@@ -927,25 +927,25 @@ a {
     background-repeat: no-repeat;
 }
 /*Checked*/
-.checkbox:checked + .check__box {
+.checkbox:checked + .check-box {
     background-image: url(../img/checkbox-on.svg);
 }
 /*Focused*/
-.checkbox:focus + .check__box {
+.checkbox:focus + .check-box {
     background-image: url(../img/checkbox-off.svg);
 }
 
-.checkbox:checked:focus + .check__box {
+.checkbox:checked:focus + .check-box {
     background-image: url(../img/checkbox-on.svg);
 }
 /*Disabled*/
-.checkbox:disabled + .check__box {
+.checkbox:disabled + .check-box {
     background-image: url(../img/checkbox-off-disabled.svg);
 }
-.checkbox:focus:disabled + .check__box {
+.checkbox:focus:disabled + .check-box {
     background-image: url(../img/checkbox-on-disabled.svg);
 }
-.checkbox:checked:disabled + .check__box {
+.checkbox:checked:disabled + .check-box {
     background-image: url(../img/checkbox-off-disabled.svg);
 }
 .price {
