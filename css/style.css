@@ -1267,12 +1267,13 @@ a {
 .hotel-stars {
     display: flex;
     justify-content: flex-end;
-    padding-top: 4px;
+    padding-top: 8px;
     width: 91px;
     margin-bottom: 45px;
 }
-.srar {
-    padding-right: 13px;
+.star {
+    padding-right: 2px;
+    
 }    
 .hotel-rating-numbers {
     display: -webkit-box;
