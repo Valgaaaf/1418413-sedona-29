@@ -1,21 +1,21 @@
 /*Fonts*/
 /* pt-sans-regular - latin_cyrillic */
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 400;
-  src: local('PT Sans'), local('PTSans-Regular'),
-       url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/pt-sans-v11-latin_cyrillic-regular.woff') format('woff'), /* Modern Browsers */
+  src: local("PT Sans"), local("PTSans-Regular"),
+       url("../fonts/pt-sans-v11-latin_cyrillic-regular.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/pt-sans-v11-latin_cyrillic-regular.woff") format("woff"), /* Modern Browsers */
 }
 /* pt-sans-700 - latin_cyrillic */
 @font-face {
-  font-family: 'PT Sans';
+  font-family: "PT Sans";
   font-style: normal;
   font-weight: 700;
-  src: local('PT Sans Bold'), local('PTSans-Bold'),
-       url('../fonts/pt-sans-v11-latin_cyrillic-700.woff2') format('woff2'), /* Super Modern Browsers */
-       url('../fonts/pt-sans-v11-latin_cyrillic-700.woff') format('woff'), /* Modern Browsers */
+  src: local("PT Sans Bold"), local("PTSans-Bold"),
+       url("../fonts/pt-sans-v11-latin_cyrillic-700.woff2") format("woff2"), /* Super Modern Browsers */
+       url("../fonts/pt-sans-v11-latin_cyrillic-700.woff") format("woff"), /* Modern Browsers */
 }
 /*!????!!*/
 :root {
@@ -40,8 +40,7 @@
     --gray-htmlacademy: #BDBBBC;/**/
 }
 .page {
-    height: 100%;
-    
+    height: 100%; 
 }
 .page-body {
     position: relative;
@@ -50,6 +49,7 @@
     grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
     grid-template-rows: min-content 1fr min-content;
 }
+
 body {
     margin: 0;
     padding: 0;
@@ -58,8 +58,19 @@ body {
     line-height: 21px;
     font-weight: normal;
     color: var(--basic-black);
-    background-color: var(--basic-white);
+    background-color: #888888;
     text-transform: uppercase;
+}
+.body-bg {
+    position: relative;
+    min-height: 100%;
+    display: grid;
+    grid-template-rows: -webkit-min-content 1fr -webkit-min-content;
+    grid-template-rows: min-content 1fr min-content;
+    width: 1200px;
+    background-color: white;
+    margin: 0 auto;
+    box-shadow: 0px 5px 15px rgba(0, 1, 1, 0.2);
 }
 .visually-hidden {
     position: absolute;
@@ -264,6 +275,10 @@ a {
     font-size: 14px;
     line-height: 21px;
 }
+.reason-list-text-comment {
+    font-weight: normal;
+    margin-top: 26px;
+}
 .feature-list {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -275,11 +290,12 @@ a {
     list-style: none;
     margin: 0;
     padding: 0;
+    padding-left: 10px;
     text-align: center;
     padding-bottom: 83px;
 }
 .feature-item  {
-    padding-top: 56px;
+    padding-top: 60px;
 }
 .icon {
     display: -webkit-box;
@@ -697,7 +713,6 @@ a {
 }
 .main-footer {
     position: relative;
-    display: flex;
     width: 1200px;
     flex-direction: row;
     margin: 0 auto;
@@ -705,14 +720,24 @@ a {
     background: rgba(255, 255, 255, 0.9);
     z-index: 3;
 }
+.footer-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-top: 26px;
+    padding-left: 125px;
+    padding-right: 140px;
+    padding-bottom: 38px;
+}
 .page-body .main-footer {
     margin-top: -120px;
 }
 .social {
     display: flex;
-    width: 400px;
     padding: 0;
     margin: 0;
+    margin-right: 10px;
+    padding-top: 12px;
     justify-content: center;
 }
 .hashtag-item {
@@ -720,11 +745,13 @@ a {
     flex-direction: column;
     align-items: center;
     align-self: center;
-    width: 400px;
     margin: 0;
     padding: 0;
     font-size: 21px;
     font-weight: bold;
+}
+.hashtag-link {
+    margin-bottom: 17px;
 }
 .social-list {
     display: -webkit-box;
@@ -764,6 +791,7 @@ a {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    padding-top: 10px;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -ms-flex-direction: row;
@@ -774,7 +802,6 @@ a {
     -webkit-box-align: center;
     -ms-flex-align: center;
     align-items: center;
-    width: 400px;
 }
 .academy-container:hover,
 .academy-container:focus {
@@ -820,7 +847,11 @@ a {
     padding: 0;
     border: none;
 }
-
+.subtitle {
+    font-size: 16px;
+    line-height: 21px;
+    font-weight: 700;
+}
 .infrastructure {
     margin-right: 135px;
     padding-left: 23px;
@@ -1102,7 +1133,7 @@ a {
 }
 .hotels {
     margin: 0;
-    padding-top: 30px;
+    padding-top: 26px;
 }
 .hotels-sort-battoms {
     display: flex;
@@ -1118,7 +1149,6 @@ a {
     display: block;
     margin: 0;
     padding: 0;
-    margin-bottom: 35px;
     list-style: none;
     border-bottom: 1px solid #E5E5E5;
 }
