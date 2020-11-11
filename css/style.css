@@ -58,7 +58,7 @@ body {
     line-height: 21px;
     font-weight: normal;
     color: var(--basic-black);
-    background-color: #888888;
+    background-color: #f2f2f2;
     text-transform: uppercase;
 }
 .body-bg {
@@ -724,7 +724,7 @@ a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding-top: 26px;
+    padding-top: 24px;
     padding-left: 125px;
     padding-right: 140px;
     padding-bottom: 38px;
@@ -751,7 +751,7 @@ a {
     font-weight: bold;
 }
 .hashtag-link {
-    margin-bottom: 17px;
+    margin-bottom: 12px;
 }
 .social-list {
     display: -webkit-box;
@@ -837,7 +837,7 @@ a {
     padding-bottom: 0px;
 }
 .filter-form legend {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: bold;
     line-height: 21px;
     color: inherit;
@@ -853,7 +853,7 @@ a {
     font-weight: 700;
 }
 .infrastructure {
-    margin-right: 135px;
+    margin-right: 122px;
     padding-left: 23px;
 }
 .infrastructure legend {
